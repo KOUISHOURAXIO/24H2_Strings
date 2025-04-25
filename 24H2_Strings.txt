@@ -37,7 +37,7 @@ PerfIsoEnabled - def 0
 CacheIsoBitmap - def 0
 IdealDpcRate - def 14
 CacheErrataOverride - def 0
-MaxDynamicTickDuration - ???
+*MaxDynamicTickDuration
 DisableExceptionChainValidation - def 2
 MitigationOptions - def 0
 MitigationAuditOptions - def 0
@@ -356,11 +356,11 @@ PoFxSystemIrpWaitForReportDevicePowered - def 0
 DisableDisplayBurstOnPowerSourceChange - def 0
 DisableInboxPepGeneratedConstraints - def ffffffff
 
-*PowerWatchdogRequestQueueTimeoutMsec - ???
-*PowerWatchdogPoCalloutTimeoutMsec - ???
-*PowerWatchdogPowerOnGdiTimeoutMsec - ???
-*PowerWatchdogDwmSyncFlushTimeoutMsec - ???
-*PowerWatchdogDrvSetMonitorTimeoutMsec - ???
+*PowerWatchdogRequestQueueTimeoutMsec
+*PowerWatchdogPoCalloutTimeoutMsec
+*PowerWatchdogPowerOnGdiTimeoutMsec
+*PowerWatchdogDwmSyncFlushTimeoutMsec
+*PowerWatchdogDrvSetMonitorTimeoutMsec
 
 HKLM\SYSTEM\CurrentControlSet\Control\Power\ModernSleep:
 EnabledActions - def 0
@@ -987,5 +987,19 @@ RedirectionKey (dword) (enable - delete dword "RedirectionKey") (disable to 0)
 Storage:
 SYSTEM\CurrentControlSet\Control\Storage
 Deny_Execute
+
+Windows Main:
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
+*TimerCoalescing
+*RITdemonTimerPowerSaveElapse"
+*RITdemonTimerPowerSaveCoalescing"
+*IsVailContainer"
+*DCEInUseTelemetryDisabled"
+*GlobalDCEsInUseThreshold"
+*ProcessDCEsInUseThreshold"
+*RimObserverQueueSize"
+DesktopHeapLogging - def 1
+*GDIEnableReferenceStackTraces
+*GDICaptureStackTraceForObjectType
 
 ...
