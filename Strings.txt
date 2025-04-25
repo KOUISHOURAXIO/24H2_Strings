@@ -1,0 +1,991 @@
+Win11 24H2
+
+Description:
+* - These parads exist, but of them do not have a symbol on W11 24H2
+... - I will update the lines soon
+
+Start Strings:
+NTOSKRNL PARAMERTS:
+HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel:
+DriveRemappingMitigation - def 1
+DPCTimeout - def 4e20
+DpcSoftTimeout - def 4e20
+DpcCumulativeSoftTimeout - def 1d4c0
+DpcWatchdogPeriod - def 1d4c0
+DpcWatchdogProfileOffset - def 2710
+DpcWatchdogProfileBufferSizeBytes - def 41000
+DpcWatchdogProfileSingleDpcThreshold - def 479d
+DpcWatchdogProfileCumulativeDpcThreshold - def 1adb0
+AmdTprLowerInterruptDelayConfig - def 0
+VerifierDpcScalingFactor - def 1
+ThreadDpcEnable - def 1
+DpcQueueDepth - def 4
+MinimumDpcRate - def 3
+MaximumSharedReadyQueueSize - def 104
+MaximumCooperativeIdleSearchWidth - def 10
+AdjustDpcThreshold - def 14 
+PassiveWatchdogTimeout - def 12C
+SchedulerAssistThreadFlagOverride - def 0
+SerializeTimerExpiration - def 1
+GlobalTimerResolutionRequests - def 0
+DisableLowQosTimerResolution 1
+EnablePerCpuClockTickScheduling - def 0
+EnableTickAccumulationFromAccountingPeriods - def 0
+DisableTsx - def 0
+VpThreadSystemWorkPriority - 1E
+PerfIsoEnabled - def 0
+CacheIsoBitmap - def 0
+IdealDpcRate - def 14
+CacheErrataOverride - def 0
+MaxDynamicTickDuration - ???
+DisableExceptionChainValidation - def 2
+MitigationOptions - def 0
+MitigationAuditOptions - def 0
+DisableControlFlowGuardExportSuppression - def 0
+ForceIdleGracePeriod - def 5
+HotpatchTestMode​​​​​​​ - def 1
+ObTracePoolTags​​​​​​​ - def 0
+ObTraceProcessName​​​​​​​ - def 0
+ObTracePermanent​​​​​​​ - def 0
+PoCleanShutdownFlags​​​​​​​ - def 0
+ObUnsecureGlobalNames​​​​​​​ - def 65006e
+TimerCheckFlags - def 1
+SplitLargeCaches​​​​​​​ - def 0
+AlwaysTrackIoBoosting​​​​​​​ - def 0
+ObCaseInsensitive​​​​​​​ - def 1
+BugCheckUnexpectedInterrupts​​​​​​​ - def 0
+DebuggerIsStallOwner​​​​​​​ - def 0
+DebugPollInterval​​​​​​​ - def 7D0
+PowerOffFrozenProcessors​​​​​​​ - def 1
+DisableLightWeightSuspend​​​​​​​ - def 0
+ObObjectSecurityInheritance​​​​​​​ - def 0
+SeAllowAllApplicationAceRemoval​​​​​​​ - def 0
+HyperStartDisabled​​​​​​​ - def 0
+SeAllowSessionImpersonationCapability​​​​​​​ - def 0
+InterruptSteeringFlags​​​​​​​ - def 0
+SeTokenSingletonAttributesConfig​​​​​​​ - def 3
+SeCompatFlags​​​​​​​ - def 0
+SeTokenLeakDiag​​​​​​​ - def 0
+SeTokenDoesNotTrackSessionObject​​​​​​​ - def 0
+HeteroFavoredCoreFallback​​​​​​​ - def 0
+VirtualHeteroHysteresis​​​​​​​ - def ffffffff
+WpsSimulationOverride​​​​​​​ - def 0
+RebalanceMinPriority​​​​​​​ - def 1
+SeLpacEnableWatsonReporting​​​​​​​ - def 0
+SeLpacEnableWatsonThrottling​​​​​​​ - def 1
+EnableWerUserReporting​​​​​​​ - def 1
+DeviceOwnerProtectionDowngradeAllowed​​​​​​​ - def 0
+CacheAwareScheduling​​​​​​​ - def 2f
+HeteroSchedulerOptions​​​​​​​ - def 0
+HeteroSchedulerOptionsMask​​​​​​​ - def 0
+ForceForegroundBoostDecay​​​​​​​ - def 0
+ForceBugcheckForDpcWatchdog​​​​​​​ - def 0
+LongDpcRuntimeThreshold​​​​​​​ - def 64
+LongDpcQueueThreshold​​​​​​​ - def 3
+HgsPlusFeedbackUpdateThresholdRuntime​​​​​​​ - def 14
+HgsPlusFeedbackUpdateThresholdNetRuntim​​​​​​​e -  def 14
+HgsPlusInvalidFeedbackLimit​​​​​​​ - 32
+HgsPlusInvalidFeedbackDefaultClass​​​​​​​ - def 0
+HgsPlusLowerPerfClassFeedbackThreshold​​​​​​​ - def 0
+HgsPlusHigherPerfClassFeedbackThreshold​​​​​​​ - def 1
+HgsPlusMinimumScoreDifferenceForSwap​​​​​​​ - def 19
+HgsPlusThreadCreationDefaultClass​​​​​​​ - def 0
+DisablePointerParameterAlignmentValidat​​​​​​​ion - def 0
+XStateContextLookasidePerProcMaxDepth​​​​​​​ - def 0
+IdealNodeRandomized​​​​​​​ - def 1
+ForceParkingRequested​​​​​​​ - def 1
+
+HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel\RNG:
+RNGAuxiliarySeed - def ???
+
+HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management: 
+PagedPoolQuota - def ffffffff
+NonPagedPoolQuota - def ffffffff
+PagingFileQuota - def ffffffff
+WorkingSetPagesQuota - def ffffffff
+AllocationPreference - def 0
+Mirroring - def 0
+MoveImages - def 1
+LowMemoryThreshold - def 0
+HighMemoryThreshold - def 0
+DisablePageCombining - def 0
+DisablePagingExecutive - def 0
+EnableCooling - def 0
+ModifiedWriteMaximum - def 100
+PoolTagSmallTableSize - def 1001
+PoolForceFullDecommit - def 0
+PoolTag - def 0
+TrackPtes - def 0
+PageValidationAction - def 0
+PageValidationFrequency - def 0
+ForceValidateIo - def 0
+PhysicalMemoryMapperEnforcementMode - def 0
+VerifierOptions - def 0
+VerifierTipDisable - def 0
+VerifierNewRuleWorkaround - def 0
+VerifierIrpStackTraces - def 4000
+VerifierHandleTraces - def 4000
+VerifierIrpTimeout - def 0
+VerifyDriverLevel - def ffffffff
+VerifyDrivers - def ???
+VerifierSettingState - def 0
+XdvVerifierOptions - def 0
+VerifyMode - def 4
+VerifyTriage - def ffffffff
+VerifyTriageRules - def 0
+DifPluginConfigData - def ???
+VerifierFaultProbability - def 258
+VerifierFaultBootMinutes​​​​​​​ - def 8
+VerifierFaultApplications​​​​​​​ - def 0
+VerifierFaultTags​​​​​​​ - def 0
+VerifierDifPoolTags​​​​​​​ - def 0
+VerifierRandomTargets​​​​​​​ - def 0
+VerifierTipLimitDenominator​​​​​​​ - def 0
+VerifierTipLimitNumerator​​​​​​​ - def 0
+VerifierTipSparseness​​​​​​​ - def 0
+VerifierTriageContext​​​​​​​ - def 0
+XdvTipTag​​​​​​​ - def 0
+XdvVerifierOptions​​​​​​​ - def 0
+VerifyBTSBufferSize​​​​​​​ - def 0
+VerifyDriversSuppress​​​​​​​ - def ???
+VerifierPoolTracesLength​​​​​​​ - def 0
+DeadlockRecursionDepthLimit​​​​​​​ - def 0
+DeadlockSearchNodesLimit​​​​​​​ - def 0
+MinimumStackCommitInBytes​​​​​​​ - def 0
+WorkingSetSwapSharedPages​​​​​​​ - def 0
+VmPauseOutswapSizeCapMB​​​​​​​ - def 200
+RemoteFileDirtyPageThreshold​​​​​​​ - def 140000
+MaxLazyWritePages - def 0
+EnablePerVolumeLazyWriter - def 2
+EnableAsyncLazywrite - def 2
+EnableAsyncLazywriteMulti - def 2
+CacheUnmapBehindLengthInMB - def 0
+DisableCacheTelemetry - def 2
+TopBottomDPTEqual - def 0
+LazyWriterPercentageOfNumProcs - def 0
+LargeWriteSize - def 0
+SoftThrottleLargeWriteAtPct - def 0
+SoftThrottleDelayInMs - def 0
+CustomDTPDenominator - def 8
+SimulateCommitSavings - def 0
+KernelPadSectionsOverride - def 0
+AllowUserHotPatchWithoutVbs - def 0
+SpecialPurposeMemoryStartPage - def 0
+SpecialPurposeMemoryPages - def 0
+
+HKLM\CurrentControlSet\Control\Session Manager\Power:
+SleepStudyDisabled - def 0
+SleepStudyDeviceAccountingLevel - def 4
+WatchdogSleepTimeout - def 12c
+WatchdogResumeTimeout - def 78
+IdleScanInterval - def 1e
+FlushPolicy - def 0
+Win32CalloutWatchdogBugcheckEnabled - def 0
+SkipTickOverride - def 1
+
+HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System:
+LargeIrpStackLocations - def 13
+MediumIrpStackLocations - def 2
+IoBlockLegacyFsFilters - def 0
+IoCaseInsensitive - def 1
+RequireDeviceAccessCheck - def 1
+IoFailZeroAccessCreate - def 1
+IoEnableSessionZeroAccessCheck - def 0
+IoAllowLoadCrashDumpDriver - def 0
+IoIrpCompletionTimeoutInSeconds - def 12c
+IoKeepAliveTimeMs - def 1388
+DisableDiskCounters - def 0
+
+HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Executive:
+AdditionalCriticalWorkerThreads - def 0
+AdditionalDelayedWorkerThreads - def 0
+MaximumKernelWorkerThreads - def 1000
+WorkerThreadTimeoutInSeconds - def 258
+KernelWorkerTestFlags - def 0
+WorkerFactoryThreadCreationTimeout - def a
+WorkerFactoryThreadIdleTimeout - def 43
+ForceEnableMutantAutoboost - def 0
+
+HKLM\SYSTEM\CurrentControlSet\Control\Session Manager:
+ProtectionMode - def 1
+ObjectSecurityMode - def 1
+GlobalFlag - def 40
+GlobalFlag2 - def 8a8b48cc
+SkipRegistryInit - def 0
+CWDIllegalInDLLSearch - def 0
+ResourceTimeoutCount - def 2d
+ResourceCheckFlags - def 3
+ResourceEnforceOwnerTransfer - def 0
+CriticalSectionTimeout - def 278d00
+HeapSegmentReserve - def 100000
+HeapSegmentCommit - def 2000
+HiberbootEnabled - def 1
+HeapDeCommitTotalFreeThreshold - def 10000
+HeapDeCommitFreeBlockThreshold - def 1000
+PowerPolicySimulate - def 0
+Debugger Retries - def 14
+AlpcMessageLog - def 0
+AlpcWakePolicy - def 1
+ImageExecutionOptions - def 0
+ErrorPortStartTimeout - def 3a98
+ErrorPortCommTimeout - def 2710
+PowerSimulateHiberBugcheck - def 0
+InitConsoleFlags - def 0
+MultiUsersInSessionSupported - def 0
+DisableIFEOCaching - def 0
+
+HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Quota System:
+JobTimeLimitsPeriodSeconds - def 7
+ApplicationBlockedMessageLimit - def 32
+SystemBlockedMessageLimit - def c8
+
+HKLM\SYSTEM\CurrentControlSet\Control\Power :
+MaximumFrequencyOverride - def 0
+HibernateEnabledDefault - def 1
+HibernateBootOptimizationEnabled - def 0
+HiberFileTypeDefault - def ffffffff
+HiberbootEnabled - def 0
+HibernateChecksummingEnabled - def 1
+EnableMinimalHiberFile - def 0
+ForceMinimalHiberFile - def 0
+ThermalPollingMode - def 0
+ThermalTelemetryVerbosity - def 1
+SmartUserPresenceGracePeriod - def 708
+SmartUserPresenceWakeOffset - def 12c
+SmartUserPresenceCheckTimeout - def 2a30
+SmartUserPresenceAction - def 0
+DozeDeferralMaxSeconds - def 3f480
+DozeDeferralChecksToIgnore - def 0
+Win32kCalloutWatchdogTimeoutSeconds - def 1e
+PdcIdlePhaseDefaultWatchdogTimeoutSeconds - def 1e
+FxAccountingTelemetryDisabled - def 0
+PowerActionSuspendWatchdogTimeoutDefault - def 258
+PowerActionResumeWatchdogTimeoutDefault - def 12c
+MSDisabled - def 0
+PlatformRoleOverride - def ffffffff
+PlatformAoAcOverride - def ffffffff
+PerfBoostAtGuaranteed - def 0
+IpiLastClockOwnerDisable - def 0
+MfBufferingThreshold - def 0
+MfOverridesDisabled - def 1
+LatencyToleranceDefault - def 186a0
+LatencyToleranceVSyncEnabled - def 32c9
+LatencyToleranceFSVP - def 4e20
+LatencyToleranceIdleResiliency - def 16e360
+LatencyToleranceSoftParked - def 0
+LatencyToleranceParked - def 0
+PerfIdealAggressiveIncreasePolicyThreshold - def 5a
+PerfSingleStepSize - 5
+PerfCalculateActualUtilization - def 1
+PerfArtificialDomain - def ffffffff
+MultiparkGranularity - def 8
+Class1InitialUnparkCount - def 40
+HighPerfDurationBoot - def 15f90
+HighPerfDurationCSExit - def 1388
+HighPerfDurationSxExit - def 15f90
+IdleDurationExpirationTimeout - def 4
+DisableIdleStatesAtBoot - def 0
+BootHeteroPolicyOverride - def 0
+HeteroMultiCoreClassesEnabled - def ffffffff
+HeteroMultiClassParkingEnabled - def ffffffff
+AlwaysComputeQosHints - def 0
+ExperimentalClusterIdleMitigation - def 0
+EnforceDisconnectedStandby - def 0
+EnforceAusterityMode - def 0
+UserBatteryDischargeEstimator - def 0
+UserBatteryChargeEstimator - def 0
+StandbyConnectivityGracePeriod - def 0
+HeteroFavoredCoreRotationTimeoutMs - def 7530
+HeteroHgsPlusDisabled - def 0
+PerfCheckTimerImplementation - def 0
+HeteroHgsEePerfHintsIndependentEnabled - def 0
+HeteroWpsWorkloadProminenceCutoff - def 23
+EnablePowerButtonSuppression - def ffffffff
+HeteroWpsContainmentEnumOverride - def 0
+ManualDimTimeout - def 0
+SuppressResumePromp - def 0
+EventProcessorEnabled - def 1
+PdcOneWayEntry - def 0
+RestrictedStandbyDozeTimeoutSeconds - def 0
+PromoteHibernateToShutdown - def 0
+CoalescingTimerInterval - def 5dc
+CoalescingFlushInterval - def 3c
+EnableInputSuppression - def ffffffff
+IgnoreLidStateForInputSuppression - def ffffffff
+ActiveIdleTimeout - def 3e8
+ActiveIdleThreshold - def 4c4b40
+ActiveIdleLevel - def 1
+DirectedFxDefaultTimeout - def 78
+IdleStateTimeout - def 1f4
+WatchdogWorkOrderTimeout - def 493e0
+DripsCallbackInterval - def 23
+DripsWatchdogDebounceInterval - def 78
+DripsWatchdogTimeout - def 12c
+DripsWatchdogAction - def c6
+DirectedDripsOverride - def ffffffff
+DirectedDripsTimeout - def 12c
+DirectedDripsDebounceInterval - def 78
+DirectedDripsAction - def 3
+DirectedDripsWaitWakeTimeout - def 5
+DirectedDripsSurprisePowerOnTimeout - def 5
+DirectedDripsDfxEnforcementPolicy - def 1
+SleepstudyAccountingEnabled - def 1
+SleepstudyLibraryBlockerLimit - def c8
+SleepstudyGlobalBlockerLimit - def bb8
+DisableVsyncLatencyUpdate - def 0
+ExitLatencyCheckEnabled - def 1
+EnergyEstimationEnabled - def 0
+CheckPowerSourceAfterRtcWakeTime - def 1e
+DripsSwHwDivergenceThreshold - def 10e
+DripsSwHwDivergenceEnableLiveDump - def 0
+IgnoreCsComplianceCheck - def 0
+PerfQueryOnDevicePowerChanges - def 0
+EnforceConsoleLockScreenTimeout - def 0
+DeepIoCoalescingEnabled - def 0
+AllowSystemRequiredPowerRequests - def 1
+AllowAudioToEnableExecutionRequiredPowerRequests - def 1
+TtmEnabled - def 0
+ProximityEscapeMsec - def 0
+TimerRebaseThresholdOnDripsExit - def 3c
+FxRuntimeLogNumberEntries - def 40
+CheckpointSystemSleep - def 0
+IdleProcessorsRequireQosManagement - def 0
+CheckpointSystemSleepSimulateFlags - def 0
+SkipHibernateMemoryMapValidation - def ffffffff
+PoFxSystemIrpWaitForReportDevicePowered - def 0
+DisableDisplayBurstOnPowerSourceChange - def 0
+DisableInboxPepGeneratedConstraints - def ffffffff
+
+*PowerWatchdogRequestQueueTimeoutMsec - ???
+*PowerWatchdogPoCalloutTimeoutMsec - ???
+*PowerWatchdogPowerOnGdiTimeoutMsec - ???
+*PowerWatchdogDwmSyncFlushTimeoutMsec - ???
+*PowerWatchdogDrvSetMonitorTimeoutMsec - ???
+
+HKLM\SYSTEM\CurrentControlSet\Control\Power\ModernSleep:
+EnabledActions - def 0
+EnableDsNetRefresh - def 0
+
+HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling:
+PowerThrottlingOff - def 0
+​
+DXGKRNL PARAMERTS:
+HKLM\SYSTEM\ControlSet001\Control\GraphicsDrivers:
+MiracastForceDisable - def 2
+MiracastUseIhvDriver - def 2
+DisableVaBackedVm - def 0
+DisableVersionMismatchCheck - def 0
+GpuVirtualizationFlags - def 4
+LimitNumberOfVfs - def 0
+MultiMonSupport - def 1
+VirtualGpuOnly - def 0
+TdrDelay - def 2
+AllowAdvancedEtwLogging - def 0
+DiagnosticsBufferExpansionTime - def 300
+EnableAcmSupportDeveloperPreview def ???
+EnableFuzzing - def 0
+EnableHMDTestMode - def 0
+EnableIgnoreWin32ProcessStatus - def 0
+EnableIntegratedPanelAcmByDefault
+ExternalDiagnosticsBufferMultiplier - def 0
+ExternalDiagnosticsBufferSize - def 0
+ForceBddFallbackOnly - def 0
+ForceUsb4MonitorSupport - def 0
+HwSchMode - def 2
+HwSchOverrideBlockList - def 1
+HwSchTreatExperimentalAsStable - def 0
+InternalDiagnosticsBufferMultiplier - def 0
+InternalDiagnosticsBufferSize - def 0
+InvestigationDebugParameter - def 0
+IsInternalRelease - def 0
+MaximumAdapterCount - def 32
+MiracastDefaultRtspPort - def 7236
+NodeUsageTelemetryTimerInterval - def ??? (But most likely 0)
+PlatformSupportMiracast - def 0
+PreserveFirmwareMode - def 0
+PreventFullscreenWireFormatChange - def 0
+RapidHpdMaxChainInMilliseconds - def 15000
+RapidHpdTimeoutInMilliseconds - def 5000
+SupportMultipleIntegratedDisplays
+SuspendAdapterTimerPeriod - def 500000
+TdrDdiDelay - def 5
+TdrDebugMode - def 2
+TdrDodPresentDelay - def 2
+TdrDodVSyncDelay - def 2
+TdrLevel - def 3
+TdrLimitCount - def 5
+TdrLimitTime - def 0000003C
+TerminationListSizeLimit - def 04000000
+TreatUsb4MonitorAsNormal - def 0
+UnsupportedMonitorModesAllowed
+Usb4MonitorDpcdDP_IN_Adapter_Number - def 0
+Usb4MonitorDpcdUSB4_Driver_ID - def 0
+Usb4MonitorPowerOnDelayInSeconds - def 0
+Usb4MonitorTargetId - def 0
+ValidateWDDMCaps - def 0
+WDDM2LockManagement - def 1
+ForceAccessedPhysically - def 0
+ForceToMapGpuVa - def 0
+CABCOption - def 2
+ContextNoPatchMode - def 0
+CreateGdiPrimaryOnSlaveGpu - def 0
+CrtcPhaseFrames - def 2
+DeadlockPulse - def 5000
+DeadlockPulseTolerance - def 500
+DeadlockTimeout - def 30000
+DisableBadDriverCheckForHwProtection - def 0
+DisableBoostedVSyncVirtualization - def 0
+DisableCABC - def 0
+DisableGdiContextGpuVa - def 0
+DisableIndependentVidPnVSync - def 0
+DisableMonitoredFenceGpuVa - def 0
+DisableMultiSourceMPOCheck - def 0
+DisableOverlays - def 0 (1 = you always get a COMPOSED FLIP instead of a HARDWARE INDEPENDENT FLIP when playing with the FSO)
+DisablePagingContextGpuVa - def 0
+DisableSecondaryIFlipSupport - def 0
+DriverManagesResidencyOverride - def 1
+DriverStoreCopyMode - def 1
+EnableBasicRenderGpuPv - def 0
+EnableDecodeMPO - def 0
+EnableFbrValidation - def 1
+EnableMultiPlaneOverlay3DDIs - def 0
+EnableOfferReclaimOnDriver - def 1
+EnablePanelFitterSupport - def 0
+EnableTimedCalls - def 0
+EnableWDDM23Synchronization - def 0
+Force32BitFences - def 0
+ForceDirectFlip - def 0
+ForceEnableDxgMms2 - def 0
+ForceExplicitResidencyNotification - def 0
+ForceInitPagingProcessVaSpace - def 0
+ForceReplicateGdiContent - def 0
+ForceSecondaryIFlipSupport - def 0
+ForceSecondaryMPOSupport - def 0
+ForceSurpriseRemovalSupport - def 0
+ForceVariableRefresh - def 0
+GdiPhysicalAdapterIndex - def 0
+GpuPriorityChangeMode - def 1
+HighPriorityCompletionMode - def 1
+InitialPagingQueueFenceValue - def 7000
+IoMmuFlags - def 0
+KnownProcessBoostMode - def 1
+LeanMemoryLimit - def 1395864371 (decimal???)
+NumVirtualFunctions - def 0
+SmallQuantumMode - def 1
+DRTTestEnable - def 0
+EnableExperimentalRefreshRates - def 0
+ForceEnableDWMClone
+PageFaultDebugMode
+RapidHPDThresholdCount - def ???
+RapidHPDTime - def 1000
+CddBootImageMode - def ???
+CddBootScreenMode - def ???
+DefaultExternalSdrWhiteLevel - def ???
+OutputDuplicationSessionApplicationLimit -  def ???​​​​​​​​​​​​​​
+
+HKLM\SYSTEM\ControlSet001\Control\GraphicsDrivers\BasicDisplay:
+DisableBasicDisplayFallback - def ???
+EnableBasicDisplayFallback - def ???
+ForcePreserveBootDisplay - def 0
+
+Not read by the system, but by the CSRSS process:
+HKLM\SYSTEM\ControlSet001\Control\GraphicsDrivers\Scheduler:
+AdjustWorkerThreadPriority - def 1
+AudioDgAutoBoostPriority - def 24
+AutoSyncToCPUPriority - def 1
+BackgroundProcessMaximumAllowedPreemptionDelay - def 0
+CarryOverUsedQuantum - def 0
+ContextSchedulingPenaltyDelay - def 1000
+CountFlipTowardHwLimit - def 0
+CountPresentTowardHwLimit - def 0
+DebugLargeSmoothenedDuration - def 1
+EnableDirectSubmission - def ???
+EnablePreemption - def 1
+FlipDoNotFlipMode - def 0
+ForceEnableFlipFenceModel - def 0
+ForceFlipTrueImmediateMode - def 0 (1 = Locks your fps to your monitor's hertz when you play in full screen mode)
+ForegroundPriorityBoost - def 1
+FrameServerAutoBoostPriority - def 17
+HistoryLogSize - def 64
+HwQueuedRenderPacketGroupLimit - def 2
+HwQueuePacketCap - def ???
+HwSchThreadOffloadMode - def 2
+MaxFocusGpuQuantumWithoutPresent - def 100 / 10
+MaximumAllowedPreemptionDelay - def 900
+MaxYieldInterval - def 16
+MinYieldInterval - def 8000
+NpuContextSwitchQuantum - def 30000
+NpuPreemptionQuantum - def 60000
+NumberOfDmaPacketPool - def 20
+PerSourceCustomDuration - def ???
+PfnCpuOverride - def 0
+PreemptionQuantumUnit - def 50000
+ProfileLevel - def 2
+QuantumUnit - def 25000
+QueuedPresentLimit - def 3
+VSyncIdleTimeout - def 1
+YieldPercentage - def 10​​​​​​​
+
+
+NIC NDIS PARAMERTS:
+Intel adapter-specific settings are marked in green
+
+Realtek adapter-specific settings are marked in purple​​​​​​​
+
+Mellanox adapter-specific settings are marked in blue​​​​​​​
+
+Almost all NIC settings are strings in registry
+
+(Your path might be different, so not everyone will have​​​​​​​ {4d36e972-e325-11ce-bfc1-08002be10318}\0009)
+
+OFFLOAD: (On - 3 (for tx + rx), since 1/2 are for tx (transmit) / rx (receive) separately)
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *EncapsulatedPacketTaskOffloadNvgre (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *EncapsulatedPacketTaskOffloadVxlan (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *EncapsulatedPacketTaskOffload (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *IPChecksumOffloadIPv4 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *LsoV1IPv4 (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *LsoV2IPv4 (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *LsoV2IPv6 (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *TCPChecksumOffloadIPv4 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *TCPChecksumOffloadIPv6 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *UDPChecksumOffloadIPv4 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *UDPChecksumOffloadIPv6 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *IPsecOffloadV1IPv4 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *IPsecOffloadV2 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *IPsecOffloadV2IPv4 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *TCPConnectionOffloadIPv4 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *TCPConnectionOffloadIPv6 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *TCPUDPChecksumOffloadIPv4 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *TCPUDPChecksumOffloadIPv6 (Valid values 0-3, where 0 - off, 3 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *UsoIPv4 (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *UsoIPv6 (Valid values 0-1, where 0 - off, 1 - on) - def 0
+
+Purple OFFLOAD:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : TeredoOffload (Valid values 0-1, where 0 - off, 1 - on​​​​​​​) - def ???
+
+Blue OFFLOAD:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *QoSOffload (Valid values 0-1, where 0 - off, 1 - on​​​​​​​) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *QosOffloadSupportedTCs (Valid values 0-0xFF​​​​​​​) - def FF
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : SendQueuePerPrio (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : SwParsing​​​​​​​ (Valid values 0-1, where 0 - off, 1 - TX ENABLED) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : LSOSize​​​​​​​ (Valid values MTU+1024-64000) - def 64000
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : LSOMinSegment​​​​​​​ (Valid Values 2-32) - def 2
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : LSOTcpOptions​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : LSOIpOptions​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 1
+
+RSS:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *MaxRssProcessors - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *NumaNodeId
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *Rss (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *RssBaseProcNumber - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *NumRssQueues - def 4 / 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *RssOnHostVPorts (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *RssOrVmqPreference (Valid values 0-1, where 0 - RSS, 1 - VMQ) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RssV2 (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *RssBaseProcGroup
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *RssMaxProcGroup
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *RssMaxProcNumber
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *RssProfile (Valid values 0-6, where 1-ClosestProcessor, 2-ClosestProcessorStatic, 3-NUMAScaling, 4-NUMAScalingStatic, 5-ConservativeScaling, 6-NdisRssProfileBalanced (NdisRssProfileBalanced disables all RSS settings))
+
+Green RSS:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DisablePortScaling (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AlwaysFillRssHash (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableLHRssWA (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : MaxNumRssQueuesPerVPort (Valid values 2-16) - def 4
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ReceiveScalingMode (Valid values 1-2) - def 2
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RssV2Strict (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ManyCoreScaling (Valid values 0-1, where 0 - off, 1 - on)
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : PreconfigRxHash (Valid values 0-1, where 0 - off, 1 - on) - def 1
+
+Blue RSS:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ValidateRssV2 (Valid values 0-1, where 0 - off, 1 - on) - def 0
+
+VMQ:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *VMQ (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *VMQVlanFiltering (Valid values 0-1, where 0 - off, 1 - on) - def 0
+
+Green VMQ:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : MaxDelayInFreeVmqOID (Valid values 0 - -1) - def 800
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : VMQSupported (Valid values 0-1, where 0 - off, 1 - on) - def 0
+
+SPEED CONTROL:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *FlowControl (Valid values 0-3, where 0 - Off, 1 - TX, 2 - RX, 3 - RX + TX, but there’s also a value 4 in the driver, though it’s unknown what it means) - def 4
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : SpeedDuplex (Valid values 0-50000) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : FecMode (Valid values 0-3, where 0 - Off, 1 - TX, 2 - RX, 3 - RX + TX) - def 0
+
+Blue SPEED CONTROL:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DeviceRxStallTimeout (Valid Values 0-8000) - def 1000
+
+RSC (OFFLOAD):
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *RscIPv4 (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *RscIPv6 (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *UdpRsc (Valid values 0-1, where 0 - off, 1 - on) - def 0
+
+GREEN RSC (OFFLOAD):
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ForceRscEnabled (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RscMode (Valid values 0-2) - def 1
+
+PURPLE RSC (OFFLOAD):
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *RscTimestamp (Valid values ???) - def ???​​​​​​​
+
+BLUE RSC (OFFLOAD):
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RscMaxPacketSize (Valid values 16-64) - def ???
+
+Also there is RSC in POWERSHELL offload settings (For some reason it is different from what you can see in registry): Set-NetOffloadGlobalSetting -ReceiveSegmentCoalescing Disable/ENABLE
+
+POWERSAVING:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *DeviceSleepOnDisconnect (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *PMARPOffload (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *PMNSOffload (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *WakeOnMagicPacket (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *WakeOnPattern (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *NicAutoPowerSaver (Valid values 0-1, where 0 - off, 1 - on) 
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *PMWiFiRekeyOffload (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *SSIdleTimeout (Valid values 1-60) - def 5
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *SSIdleTimeoutScreenOff (Valid values 1-60) - def 3
+
+Green POWERSAVING:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EEELinkAdvertisement (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableModernStandby (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnablePME (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnablePowerManagement (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ForceWakeFromMagicPacketOnModernStandby (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : WakeFromS5 (Valid values 0-FFFF, where 0 - Off) - def 2
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : WakeOn (Valid values 0-4, where 0 - Off) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : WakeOnLink (Valid values 0-2, where 0 - Off) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : LinkNegotiationProcess (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : WaitForValidPhyIDRead (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : WaitAutoNegComplete (Valid values 0-2, where 0 - Off) - def 2
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : SleepWhileWaiting (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableETW (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : OBFFEnabled (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ULPMode (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : I218DisablePLLShut (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : I218DisablePLLShutGiga (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : I219DisableK1Off (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DisableDelayedPowerUp (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DisableIntelRST (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DisablePhyReset (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ForceHostExitUlp (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ForceLtrValue (Valid Values 0-FFFF, where 0 - Off)  - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableDisconnectedStandby (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableHWAutonomous (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DMACoalescing (Valid values 0-10240, where 0 - Off) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableWakeOnManagmentOnTCO (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnablePHYFlexibleSpeed (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnablePHYWakeUp (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableD0PHYFlexibleSpeed (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableSavePowerNow (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AutoPowerSaveModeEnabled (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : SipsEnabled (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : WakeOnFastStartup (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ReduceSpeedOnPowerDown (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AllowAllSpeedsLPLU (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *EnableDynamicPowerGating (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableD3ColdInS0 (Valid values 0-1, where 0 - off, 1 - on) - def ???
+
+Purple POWERSAVING:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *EEE (Valid values 0-1, where 0 - off, 1 - on)
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : SSIdleTimeoutMS (Valid values ???) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AdvancedEEE (Valid values 0-1, where 0 - off, 1 - on) - def ???​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ASPM (Valid values 0-1, where 0 - off, 1 - on) - def ???​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : CLKREQ (Valid values 0-1, where 0 - off, 1 - on) - def ???​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EEEMaxSupportSpeed (Valid values ???) - def ???​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EEEPlus (Valid values 0-1, where 0 - off, 1 - on) - def ???​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableAspm (Valid values 0-1, where 0 - off, 1 - on) - def ???​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableGreenEthernet (Valid values 0-1, where 0 - off, 1 - on) - def ???​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : GigaLite (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : PowerDownPll (Valid values 0-1, where 0 - off, 1 - on) - def ???​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : PowerSavingMode (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : WolShutdownLinkSpeed (Valid values 0-2, where 0 = 10 mb, 1 = 100 mb, 2 = NotSpeedDown) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : LTROBFF (Valid values 0-1, where 0 - off, 1 - on) - def ???​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : S0MgcPkt (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : S5WakeOnLan (Valid values 0-1, where 0 - off, 1 - on) - def 0
+
+
+To check which power-saving features are actually active on your NIC (and not just listed in the driver), run the following command in PowerShell: 
+Get-NetAdapterPowerManagement
+
+INTERRUPT MODERATION:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *InterruptModeration (Valid values 0-1, where 0 - off, 1 - on) - def 0
+
+Green INTERRUPT MODERATION:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ITR (Valid values 0-FFFF, where 500 - extreme, 250 - high, 125 - medium, 64 - low, 32 - minimum, 0 - off (In microseconds)) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableAdvancedDynamicITR (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AIMBulkPacketSize (Valid values 512-1460) - def 1350
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AIMLowestLatency (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AIMPingPongSize (Valid values 64-1460) - def 128
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AIMSmallPacketSize (Valid values 64-1460) - def 500
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : VMQLowLatencyAIM (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableDcbAIM (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableEIAM (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : Ndis61MsixConfig (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableLLI (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableIAM (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableTcpTimer (Valid values 0-1, where 0 - off, 1 - on) - def ???
+
+Purple INTERRUPT MODERATION:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : InterruptModerationLevel (Valid Values ???) - def ??? (Seems to be similar to ITR)
+
+Blue INTERRUPT MODERATION:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RxIntModeration (Valid values 0-3, where 0 - Off, 1 - Static, 2 - Adaptive, 3 - Dynamic) - def 2
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : TxIntModeration (Valid values 0-4, where 0 - Off, 1 - Static, 2 - Adaptive, 3 - Dynamic, 4 - Default) - def 4
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RxIntModerationProfile (Valid values 0-3, where 0 - Low Latency, 1 - Moderate, 2 - Aggressive, 3 - Dynamic) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : TxIntModerationProfile (Valid values 0-3, where 0 - Low Latency, 1 - Moderate, 2 - Aggressive, 3 - Dynamic) - def 1
+
+JUMBO PACKET/FRAME:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *JumboPacket (Valid values 1510-9014(On some NICs max value is higher than 9014, so make sure to check your NIC's driver .inf) - def 1514
+
+Blue JUMBO PACKET/FRAME:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RoceFrameSize (Valid values 256-4096) - def ???
+
+Link Layer Discovery Protocol (LLDP) GREEN:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : UseDSCPAsUP (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DisableLLDP (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RegWAErrata70 (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RegAutoDropBlockingPackets (Valid values 0-1, where 0 - off, 1 - on) - def 1
+
+HEADER DATA SPLIT GREEN:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *HeaderDataSplit (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : HDSplitAlways (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : HDSplitBufferPad (Valid values 0-2) - def 2
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : HDSplitLocation (Valid values 0-3) - def 2
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : HDSplitSize (Valid values 128-960) - def 128
+
+RECEIVE:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *ReceiveBuffers (Valid values 128-4096 (In KB(Binary)), но в моих тестах значения работали даже выше чем 4096) - def 512
+
+RECEIVE GREEN:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ReceiveBuffersOverride (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : MaxPacketCountPerDPC (Valid values 8-FFFF) - def 256
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : MaxPacketCountPerIndicate (Valid values 1-FFFF) - def 64
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RxDescriptorCountPerTailWrite (Valid values 4-4096) - def 8
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : MinHardwareOwnedPacketCount (Valid values 8-4096) - def 32
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RxBufferPad (Valid values 0-63) - def 10
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RegForceRxPathSerialization (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableRxDescriptorChaining (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableAdaptiveQueuing (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AdaptiveQHysteresis (Valid values 16-1024) - def 64
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AdaptiveQSize (Valid values 64-2000) - def 128
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AdaptiveQWorkSet (Valid values 32-2000) - def 96
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : PadReceiveBuffer (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : StoreBadPackets (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ERT (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DynamicLTR (Valid values 0-1, where 0 - off, 1 - on) - def ???
+
+RECEIVE BLUE:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RecvCompletionMethod (Valid values 0-1, where 0 - polling, 1 - adaptive, but there is also value 4, needed to use NDIS POLL MODE) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ThreadPoll (Valid values 0-200000) - def 3000
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AsyncReceiveIndicate (Valid values 0-2, where 0 - Off, 1 - Packet burst buffering using threaded DPC, 2 - packet burst buffering using polling) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ThreadedDpcEnable (Valid values 0-1, where 0 - off, 1 - on) - def ??? - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RfdReservationFactor​​​​​​​ (Valid values ???) - def 150
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : StridingRqEnabled​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : NumberOfStrides​​​​​​​ (Valid values 8-256) - def 16
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : MaxCallsToNdisIndicate (Valid values ???) - def 5
+
+TRANSMIT:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *TransmitBuffers (Valid values 128-4096 (In KB(Binary))) - def 512
+
+TRANSMIT GREEN:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableLanCompletionQueues (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : LanCompletionQueueDescriptorCount (Valid values 128-4000000) - def 1280
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : CoalesceChunkCount (Valid values 64-512) - def 64
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : MallocCoalesceSGList (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableIntlessTxCleanup (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : TxCleanupInterval (Valid values 1-64) - def 8
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : MaxTxPacketsToFlush (Valid values 10-2000) - def 512
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AllowFlowControlFrames (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableUdpTxScaling (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DropHighlyFragmentedPacket (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableCoalesce (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableTss (Valid values 0-1, where 0 - off, 1 - on) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RsInterval (Valid values 1-32) - def ???​​​​​​​
+
+TRANSMIT Blue:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : SendCompletionMethod (Valid values 1-2, where 1 = Interrupt, а 2 = NDIS POLL MODE) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : TxThreadedDpcEnable (Valid values 0-1, where 0 - off, 1 - on) - def ???​​​​​​​ - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *PacketCoalescing (It should be there, but I couldn’t find it in WPA/IDA. However, I did find it in​​​​​​​ POWERSHELL:
+Set-NetOffloadGlobalSetting -PacketCoalescingFilter Disable/ENABLE)
+
+PACKET DIRECT Blue: 
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *PacketDirect (Valid values 0-1, where 0 - off, 1 - on)​​​​​​​ - def 1
+
+NDIS POLL MODE Blue:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *NdisPoll (Valid values 0-1, where 0 - off, 1 - on) - def 1
+
+NETWORK DIRECT Blue:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *NetworkDirect​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *NetworkDirectTechnology (Valid values 3-4, where 3 - RoCE, 4 - RoCE V2, there is also value 0,  but 0 = Default) - def 4
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *NetworkDirectRoCEFrameSize (Valid values 256-4096) - def 1024 (Identical to RoceFrameSize, but for newer Mellanox drivers)
+
+Explicit Congestion Notification (ECN)​​​​​​​ Blue:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : CongestionMonitoringEnable​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : CongestionAction​​​​​​​​​​​​​​ (Valid values 0-2, where 0 - Off, 1 - Drop, 2 - Mark) - def 2
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : CongestionMode​​​​​​​ (Valid values 0-1, where 0 - Aggressive, 1 - Dynamic) - def 1
+
+PACKET TIMESTAMPING:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *PtpHardwareTimestamp (Valid values 0-1, where 0 - off, 1 - on) - def 0
+
+PACKET TIMESTAMPING GREEN:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *SoftwareTimestamp (Valid values 0-5, info about values can be found in PACKET TIMESTAMPING) - def 0
+
+SR-IOV:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *SRIOV (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *SriovPreferred (Valid values ???) - def ???
+
+SR-IOV BLUE:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : MaxFWPagesUsagePerVF (Valid values 17000-???) - def 250000
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : *SriovVlanFiltering (Valid values ???) - def ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableFwVfPageLimit (Valid values 0-1, where 0 - off, 1 - on) - def 0
+
+ETHERNET BLUE:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : TCHeadOfQueueLifeTimeLimit (Valid values 0-20) - def  1​​​​​​​9
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : TCHeadOfQueueLifeTimeLimitEnable (Valid values 0-255) - def 255 / 0 ???
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : TCStallCount (Valid values 0-7) - def 1​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : TCStallEnable (Valid values 0-1, where 0 - off, 1 - on) - def 1​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RelaxedOrderingWrite (Valid values 0-1, where 0 - off, 1 - on) - def 1​​​​​​​
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : VFAllowedRelaxedOrdering (Valid values 0-3, where 0 - No Relaxed Ordering, 1 - Relaxed Ordering Write, 2 - Relaxed ordering Read, 3 - Relaxed Ordering Read + Write) - def 3
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DisableLocalLoopbackFlags (Valid values 0-3, where 0 - Do not disable any local loopback, 1 - Disable Multicast, 2 - Disable Unicast, 3 - Disable Unicast and Multicast) - def 0
+
+RoCE BLUE:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : roce_mode​​​​​​​ (Valid values 0-4, where 0 - RoCE, 4 - No RoCE) - def 0
+
+RDMA BLUE:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableGuestRdma​​​​​​​​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : MaxCMRetries​​​​​​​ (Valid values ???) - def 15
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RemoteCMResponseTimeout​​​​​​​​​​​​​​ (Valid values 3-25) - def 16
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : NetworkDirectAdminOnly​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : NdkFmrDedicatedQp​​​​​​​​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableCmAntiSpoofing​​​​​​​​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : BlueFlame (Valid values 0-1, where 0 - off, 1 - on) - def 1
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : EnableVFRdmaCounters​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : RdmaRelaxedOrderingWrite​​​​​​​​​​​​​​ (Valid values 0-2, where 0 - Off, 1 - On, 2 - Auto Detect) - def 0
+
+DUMP ME NOW BLUE:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DumpMeNowDirectory​​​​​​​ (value = "path") - def HOST: \Systemroot\temp\Mlx5_Dump_Me_Now--- VF: \Systemroot\temp\Mlx5_Dump_Me_Now---0
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DumpMeNowTotalCount​​​​​​​​​​​​​​ (Valid values 0-512, where 0 - Off) - def 128 - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DumpMeNowPreservedCount​​​​​​​ (Valid values 0-512, where 0 - Off) - def 8 - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DumpMeNowDumpMask​​​​​​​ - More info about this mask can be found in Nvidia WinOF-2 v24-4 Documentation
+
+RESOURCEDUMP BLUE:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ResourceDumpEnable​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 0 - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ResourceDumpQuotaTimeLimit​​​​​​​ (Valid values 1-1048575​​​​​​​) - def 3600 - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : ResourceDumpQuotaCount​​​​​​​ (Valid values 1-100) - def 5 - DWORD
+
+FWTRACE BLUE:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : FwTracerEnabled​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 1 - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : FwTracerBufferSize​​​​​​​ (Valid values 0x2000-0x200000) - def 0x10000 - DWORD
+
+DEVX BLUE:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DevxEnabled​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 0 - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : DevxFsRules​​​​​​​ (Valid values 0-8192, where 0 - Only the default IPV4/UDP DevX steering rule is supported​​​​​​​, 8 - Add support for Unicast MAC DevX steering rule​​​​​​​, 16 - Add support for IPV4/UDP with CVLAN DevX steering rule​​​​​​​, 32  - Add support for promiscuous mode​​​​​​​, 64 - Add support for IPv6 multicast​​​​​​​, 128 - Add support for IPv6 and L4 protocol​​​​​​​, 256 - Add support for Ethernet MAC and L4 protocol​​​​​​​, 512 - Add support for IPv6 multicast and any IP version​​​​​​​, 1024 - Add support for Ethernet MAC and any IP version​​​​​​​, 2048 - Add support for L4 protocol​​​​​​​, 4096 - Add support for any IP protocol​​​​​​​, 8192 - Add support for IPv4 and TCP port with cvlan​​​​​​​) - def 0 - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : AllowPromiscVport​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 0 - DWORD
+
+VF MONITORING BLUE:
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : VfCpuMonEnable​​​​​​​​​​​​​​ (Valid values 0-1, where 0 - off, 1 - on) - def 0 - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : VfCpuMonBatchPeriodSec​​​​​​​ (Valid values 0-86400, where 0 - Off, 1 - On) - def 0 - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : VfCpuMonFwCpuUsageMax​​​​​​​ (Valid values 0-100, where 0 - Off, 1 - On) - def 60 - DWORD
+Registry\Machine\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0009 : VfCpuMonErrors2FwMax​​​​​​​ (Valid values 0-0xffffffff, where 0 - Off, а 1 - On) - def 1000 - DWORD
+
+
+NDIS:
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : AllowFlowControlUnderDebugger - def e8000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : AllowWakeFromS5  - def 40000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : AOACTestOverride - def 00000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DebugLoggingMode - def 00000001
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DefaultPnPCapabilities - def 00000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DirectedMacForNapsEnabled - def 00000001
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableNaps - def 00000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableNDISWatchDog - def 00000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableReenumerationTimeoutBugcheck - def 00000001
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : DisableWDIWatchdogForceBugcheck - def 00000001
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : EnableNicAutoPowerSaverInSleepStudy - def 00000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : EnableScreenOnNaps - def 00000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : ImplicitPowerRefManagement - def 00000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : LeakedNblReaction - def 00000005
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : MaxCachedNblContextSize - def 00000400
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : MaxNumRssCpus - def = количество ядер у вашего процессора
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NblTimeoutMs - def 0000ea60
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NblTrackerHistorySize - def 00000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietDerefDefaultTimeoutMs - def 00000064
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietDerefExtendedTimeoutMs - def 000003e8
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietInitTimeoutMs - def 00007530
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NicQuietWakeTimeoutMs - def 000003e8
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : NoPauseOnSuspend - def 00000001
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PacketStackSize - def 00000002
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PadShortPackets - def 00000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthReceiveAuthorizationState - def 00000002
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthReceiveControlState - def 00000002
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthSendAuthorizationState - def 00000002
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : PortAuthSendControlState - def 00000002
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : ReceiveWorkerDisableAutoStart - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : ReceiveWorkerThreadPriority - def 00000008
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : RssBaseCpu - def 0
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : SriovSupportTestOverride - def 00000000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : StartDeviceSync - def 00400000
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : StuckNblReaction - def 00000002
+Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : TrackNblOwner - def 00000002
+
+
+Other Strings:
+LSA:
+MACHINE\System\CurrentControlSet\Control\Lsa
+SubmitControl
+RestrictRemoteSAM
+RestrictAnonymousSAM
+RestrictAnonymous
+NoLMHash
+UseMachineId
+MSV1_0\NTLMMinServerSec
+MSV1_0\NTLMMinClientSec
+MSV1_0\RestrictSendingNTLMTraffic
+MSV1_0\RestrictReceivingNTLMTraffic
+MSV1_0\AuditReceivingNTLMTraffic
+MSV1_0\ClientAllowedNTLMServers
+MSV1_0\allownullsessionfallback
+Pku2u\AllowOnlineID
+LmCompatibilityLevel
+LimitBlankPasswordUse
+FullPrivilegeAuditing
+ForceGuest
+FIPSAlgorithmPolicy\Enabled
+EveryoneIncludesAnonymous
+DisableDomainCreds
+CrashOnAuditFail
+AuditBaseObjects
+
+Policies System:
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System
+UndockWithoutLogon
+ShutdownWithoutLogon
+ScForceOption
+LegalNoticeText
+LegalNoticeCaption
+DontDisplayLastUserName
+DontDisplayUserName
+DontDisplayLockedUserId
+ConsentPromptBehavior
+DisableCAD
+EnableInstallerDetection
+EnableLUA
+EnableVirtualization
+
+Sensor Overrides:
+Note: Let apps access my location using the Windows location platform
+HKLM\Software\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}
+SensorPermissionState (dword) (enable - delete path "Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}") (disable to 0)
+
+Note: Help improve Microsoft services by sending some location data when you use location-aware apps
+HKLM\Software\Microsoft\Sensors\LocationProvider
+CSEnable (dword) (enable - delete path "LocationProvider") (disable to 0)
+
+Windows Defender:
+SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\AppHost
+EnableWebContentEvaluation (dword) (enable - change to 1) (disable to 0)
+RedirectionKey (dword) (enable - delete dword "RedirectionKey") (disable to 0)
+
+Storage:
+SYSTEM\CurrentControlSet\Control\Storage
+Deny_Execute
+
+...
