@@ -2,6 +2,7 @@ Win11 24H2
 
 Description:
 * - These parads exist, but of them do not have a symbol on W11 24H2
+! - They have a symbol but does nothing
 ... - I will update the lines soon
 
 Start Strings:
@@ -984,22 +985,27 @@ SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\AppHost
 EnableWebContentEvaluation (dword) (enable - change to 1) (disable to 0)
 RedirectionKey (dword) (enable - delete dword "RedirectionKey") (disable to 0)
 
-Storage:
-SYSTEM\CurrentControlSet\Control\Storage
-Deny_Execute
-
 Windows Main:
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
 *TimerCoalescing
-*RITdemonTimerPowerSaveElapse"
-*RITdemonTimerPowerSaveCoalescing"
-*IsVailContainer"
-*DCEInUseTelemetryDisabled"
-*GlobalDCEsInUseThreshold"
-*ProcessDCEsInUseThreshold"
-*RimObserverQueueSize"
+*RITdemonTimerPowerSaveElapse
+*RITdemonTimerPowerSaveCoalescing
+*IsVailContainer
+*DCEInUseTelemetryDisabled
+*GlobalDCEsInUseThreshold
+*ProcessDCEsInUseThreshold
+*RimObserverQueueSize
 DesktopHeapLogging - def 1
 *GDIEnableReferenceStackTraces
 *GDICaptureStackTraceForObjectType
 
+Mouse Tweaks:
+The data can go into several flows processing the input (when several applications are launched), but on Windows 11 they limited the rating for flows processing background applications up to 125 Herz, that is, there will be less a waste of resources, but it will still be significant. You can lower to 50 hertz, as Microsoft added dwords to control the restriction:
+
+HKEY_CURRENT_USER\Control Panel\Mouse
+RawMouseThrottleDuration (DWORD) - Values ​​(Decimal): 1-20 (1000: The value of the palatine = Devil for flows processing the input of background applications, the minimum is 1000: 20 = 50 Hertz). (better - 14(20))
+
+!RawMouseThrottleEnabled
+!RawMouseThrottleForced
+!RawMouseThrottleLeeway
 ...
