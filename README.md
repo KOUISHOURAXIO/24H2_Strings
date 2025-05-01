@@ -10,4 +10,4 @@ strings - a data type whose values ​​are an arbitrary sequence (string) of t
 
 # Keywords for Google indexing (ignore this)
 
-mouse tweak tweaks 7 8.1 8 10 11 w7 w8 w8.1 w10 w11 gamebar optimizations tweaking
+mouse tweak tweaks 7 8.1 8 10 11 w7 w8 w8.1 w10 w11 gamebar optimizations tweaking strings 24H2 24H2_Strings
