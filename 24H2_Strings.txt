@@ -128,7 +128,7 @@ VerifierIrpStackTraces - def 4000
 VerifierHandleTraces - def 4000
 VerifierIrpTimeout - def 0
 VerifyDriverLevel - def ffffffff
-VerifyDrivers - def ???
+*VerifyDrivers
 VerifierSettingState - def 0
 XdvVerifierOptions - def 0
 VerifyMode - def 4
@@ -148,7 +148,7 @@ VerifierTriageContext​​​​​​​ - def 0
 XdvTipTag​​​​​​​ - def 0
 XdvVerifierOptions​​​​​​​ - def 0
 VerifyBTSBufferSize​​​​​​​ - def 0
-VerifyDriversSuppress​​​​​​​ - def ???
+*VerifyDriversSuppress​​​​​​​
 VerifierPoolTracesLength​​​​​​​ - def 0
 DeadlockRecursionDepthLimit​​​​​​​ - def 0
 DeadlockSearchNodesLimit​​​​​​​ - def 0
@@ -529,30 +529,18 @@ YieldPercentage - def 10​​​​​​​
 
 Other Strings LSA:
 MACHINE\System\CurrentControlSet\Control\Lsa
-SubmitControl
-RestrictRemoteSAM
-RestrictAnonymousSAM
-RestrictAnonymous
-NoLMHash
-UseMachineId
-LimitBlankPasswordUse
-FullPrivilegeAuditing
-ForceGuest
-EveryoneIncludesAnonymous
-DisableDomainCreds
-CrashOnAuditFail
-AuditBaseObjects
+RestrictAnonymousSAM - def 0
+RestrictAnonymous - def 1
+NoLMHash - def 0
+LimitBlankPasswordUse - def 1
+DisableDomainCreds - def 0
 
 Policies System:
 MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System
-UndockWithoutLogon
-ShutdownWithoutLogon
-ScForceOption
 LegalNoticeText
 LegalNoticeCaption
-DontDisplayLastUserName
-DontDisplayUserName
-DontDisplayLockedUserId
+DontDisplayLastUserName - def 0
+DontDisplayUserName - def 0
 ConsentPromptBehavior - def 1
 DisableCAD - def 0
 EnableInstallerDetection - def 1
@@ -561,15 +549,15 @@ EnableVirtualization - def 1
 
 Windows Defender:
 SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\AppHost
-EnableWebContentEvaluation (dword) (enable - change to 1) (disable to 0)
+EnableWebContentEvaluation - def 1
 
 Windows main:
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
 *TimerCoalescing
 RITdemonTimerPowerSaveElapse - def 1
 RITdemonTimerPowerSaveCoalescing - def 1
-*IsVailContainer
-*DCEInUseTelemetryDisabled
+IsVailContainer - def 1
+DCEInUseTelemetryDisabled - def 0
 *GlobalDCEsInUseThreshold
 *ProcessDCEsInUseThreshold
 *RimObserverQueueSize
@@ -578,8 +566,6 @@ DesktopHeapLogging - def 1
 *GDICaptureStackTraceForObjectType
 
 Mouse Tweaks:
-The data can go into several flows processing the input (when several applications are launched), but on Windows 11 they limited the rating for flows processing background applications up to 125 Herz, that is, there will be less a waste of resources, but it will still be significant. You can lower to 50 hertz, as Microsoft added dwords to control the restriction:
-
 HKEY_CURRENT_USER\Control Panel\Mouse
 RawMouseThrottleDuration — def dword 1000
 
