@@ -475,18 +475,18 @@ NumVirtualFunctions - def 0
 SmallQuantumMode - def 1
 DRTTestEnable - def 0
 EnableExperimentalRefreshRates - def 0
-ForceEnableDWMClone
-PageFaultDebugMode
-RapidHPDThresholdCount - def ???
+*ForceEnableDWMClone
+*PageFaultDebugMode
+*RapidHPDThresholdCount
 RapidHPDTime - def 1000
-CddBootImageMode - def ???
-CddBootScreenMode - def ???
-DefaultExternalSdrWhiteLevel - def ???
-OutputDuplicationSessionApplicationLimit -  def ???​​​​​​​​​​​​​​
+*CddBootImageMode
+*CddBootScreenMode
+*DefaultExternalSdrWhiteLevel
+*OutputDuplicationSessionApplicationLimit
 
 HKLM\SYSTEM\ControlSet001\Control\GraphicsDrivers\BasicDisplay:
-DisableBasicDisplayFallback - def ???
-EnableBasicDisplayFallback - def ???
+*DisableBasicDisplayFallback
+*EnableBasicDisplayFallback
 ForcePreserveBootDisplay - def 0
 
 Not read by the system, but by the CSRSS process:
@@ -500,7 +500,7 @@ ContextSchedulingPenaltyDelay - def 1000
 CountFlipTowardHwLimit - def 0
 CountPresentTowardHwLimit - def 0
 DebugLargeSmoothenedDuration - def 1
-EnableDirectSubmission - def ???
+*EnableDirectSubmission
 EnablePreemption - def 1
 FlipDoNotFlipMode - def 0
 ForceEnableFlipFenceModel - def 0
@@ -509,7 +509,7 @@ ForegroundPriorityBoost - def 1
 FrameServerAutoBoostPriority - def 17
 HistoryLogSize - def 64
 HwQueuedRenderPacketGroupLimit - def 2
-HwQueuePacketCap - def ???
+*HwQueuePacketCap
 HwSchThreadOffloadMode - def 2
 MaxFocusGpuQuantumWithoutPresent - def 100 / 10
 MaximumAllowedPreemptionDelay - def 900
@@ -518,7 +518,7 @@ MinYieldInterval - def 8000
 NpuContextSwitchQuantum - def 30000
 NpuPreemptionQuantum - def 60000
 NumberOfDmaPacketPool - def 20
-PerSourceCustomDuration - def ???
+*PerSourceCustomDuration
 PfnCpuOverride - def 0
 PreemptionQuantumUnit - def 50000
 ProfileLevel - def 2
@@ -527,6 +527,67 @@ QueuedPresentLimit - def 3
 VSyncIdleTimeout - def 1
 YieldPercentage - def 10​​​​​​​
 
+Other Strings LSA:
+MACHINE\System\CurrentControlSet\Control\Lsa
+SubmitControl
+RestrictRemoteSAM
+RestrictAnonymousSAM
+RestrictAnonymous
+NoLMHash
+UseMachineId
+LimitBlankPasswordUse
+FullPrivilegeAuditing
+ForceGuest
+EveryoneIncludesAnonymous
+DisableDomainCreds
+CrashOnAuditFail
+AuditBaseObjects
+
+Policies System:
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System
+UndockWithoutLogon
+ShutdownWithoutLogon
+ScForceOption
+LegalNoticeText
+LegalNoticeCaption
+DontDisplayLastUserName
+DontDisplayUserName
+DontDisplayLockedUserId
+ConsentPromptBehavior - def 1
+DisableCAD - def 0
+EnableInstallerDetection - def 1
+EnableLUA - def 1
+EnableVirtualization - def 1
+
+Windows Defender:
+SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\AppHost
+EnableWebContentEvaluation (dword) (enable - change to 1) (disable to 0)
+
+Windows main:
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
+*TimerCoalescing
+RITdemonTimerPowerSaveElapse - def 1
+RITdemonTimerPowerSaveCoalescing - def 1
+*IsVailContainer
+*DCEInUseTelemetryDisabled
+*GlobalDCEsInUseThreshold
+*ProcessDCEsInUseThreshold
+*RimObserverQueueSize
+DesktopHeapLogging - def 1
+*GDIEnableReferenceStackTraces
+*GDICaptureStackTraceForObjectType
+
+Mouse Tweaks:
+The data can go into several flows processing the input (when several applications are launched), but on Windows 11 they limited the rating for flows processing background applications up to 125 Herz, that is, there will be less a waste of resources, but it will still be significant. You can lower to 50 hertz, as Microsoft added dwords to control the restriction:
+
+HKEY_CURRENT_USER\Control Panel\Mouse
+RawMouseThrottleDuration — def dword 1000
+
+!RawMouseThrottleEnabled
+!RawMouseThrottleForced
+!RawMouseThrottleLeeway
+
+======================================
 
 NIC NDIS PARAMERTS:
 Intel adapter-specific settings are marked in green
@@ -926,86 +987,3 @@ Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : SriovSupportTes
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : StartDeviceSync - def 00400000
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : StuckNblReaction - def 00000002
 Registry\Machine\SYSTEM\ControlSet001\Services\NDIS\PARAMETERS : TrackNblOwner - def 00000002
-
-
-Other Strings:
-LSA:
-MACHINE\System\CurrentControlSet\Control\Lsa
-SubmitControl
-RestrictRemoteSAM
-RestrictAnonymousSAM
-RestrictAnonymous
-NoLMHash
-UseMachineId
-MSV1_0\NTLMMinServerSec
-MSV1_0\NTLMMinClientSec
-MSV1_0\RestrictSendingNTLMTraffic
-MSV1_0\RestrictReceivingNTLMTraffic
-MSV1_0\AuditReceivingNTLMTraffic
-MSV1_0\ClientAllowedNTLMServers
-MSV1_0\allownullsessionfallback
-Pku2u\AllowOnlineID
-LmCompatibilityLevel
-LimitBlankPasswordUse
-FullPrivilegeAuditing
-ForceGuest
-FIPSAlgorithmPolicy\Enabled
-EveryoneIncludesAnonymous
-DisableDomainCreds
-CrashOnAuditFail
-AuditBaseObjects
-
-Policies System:
-MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System
-UndockWithoutLogon
-ShutdownWithoutLogon
-ScForceOption
-LegalNoticeText
-LegalNoticeCaption
-DontDisplayLastUserName
-DontDisplayUserName
-DontDisplayLockedUserId
-ConsentPromptBehavior
-DisableCAD
-EnableInstallerDetection
-EnableLUA
-EnableVirtualization
-
-Sensor Overrides:
-Note: Let apps access my location using the Windows location platform
-HKLM\Software\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}
-SensorPermissionState (dword) (enable - delete path "Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}") (disable to 0)
-
-Note: Help improve Microsoft services by sending some location data when you use location-aware apps
-HKLM\Software\Microsoft\Sensors\LocationProvider
-CSEnable (dword) (enable - delete path "LocationProvider") (disable to 0)
-
-Windows Defender:
-SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\AppHost
-EnableWebContentEvaluation (dword) (enable - change to 1) (disable to 0)
-RedirectionKey (dword) (enable - delete dword "RedirectionKey") (disable to 0)
-
-Windows Main:
-HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
-*TimerCoalescing
-*RITdemonTimerPowerSaveElapse
-*RITdemonTimerPowerSaveCoalescing
-*IsVailContainer
-*DCEInUseTelemetryDisabled
-*GlobalDCEsInUseThreshold
-*ProcessDCEsInUseThreshold
-*RimObserverQueueSize
-DesktopHeapLogging - def 1
-*GDIEnableReferenceStackTraces
-*GDICaptureStackTraceForObjectType
-
-Mouse Tweaks:
-The data can go into several flows processing the input (when several applications are launched), but on Windows 11 they limited the rating for flows processing background applications up to 125 Herz, that is, there will be less a waste of resources, but it will still be significant. You can lower to 50 hertz, as Microsoft added dwords to control the restriction:
-
-HKEY_CURRENT_USER\Control Panel\Mouse
-RawMouseThrottleDuration (DWORD) - Values ​​(Decimal): 1-20 (1000: The value of the palatine = Devil for flows processing the input of background applications, the minimum is 1000: 20 = 50 Hertz). (better - 14(20))
-
-!RawMouseThrottleEnabled
-!RawMouseThrottleForced
-!RawMouseThrottleLeeway
-...
